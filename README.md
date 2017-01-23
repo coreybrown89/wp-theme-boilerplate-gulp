@@ -1,6 +1,6 @@
 # Getting started
 
-I was tired of installing underscore_s and modifying it heck out of it, so this I created a quick boilerplate theme with things set up the way I like it. If you dig it, fork away and customize it to your heart's content. 
+I was tired of installing underscore_s and modifying it heck out of it, so I created a quick boilerplate theme with things set up the way I like it. If you dig it, fork away and customize it to your heart's content. 
 
 ***I am using gulp to do the following:***
 - Complile Sass
@@ -8,7 +8,7 @@ I was tired of installing underscore_s and modifying it heck out of it, so this 
 - Lint JS files
 - Compress JS 
 
-The theme itself isn't doing anything fancy. It has all the files that I need and use regularly. 
+The theme itself isn't doing anything fancy. It just has all the files that I need and use regularly. 
 
 
 ## Install
@@ -20,9 +20,9 @@ Clone this git repo by using the following command:
 $ git clone https://github.com/coreybrown89/wp-theme-boilerplate-gulp.git
 ```
 
-This will download the latest version of wp-theme-boilerplate. 
+This will download the latest version of wp-theme-boilerplate-gulp. 
 
-*You can also download this repo by clicking on the link above. Unzip this folder and add it to your themes directory in WordPress.* 
+*You can also download this repo by clicking on the download link above the source files. Unzip this folder and add it to your themes directory in WordPress.* 
 
 In the terminal run:
 ```
@@ -67,7 +67,7 @@ $ gulp
 
 ***When running gulp***
 
-- All .scss files inside of the `/scss` will be compiled to css and minified and added to the /css folder on save.
+- All .scss files inside of the `/scss` will be compiled and minified to css and added to the /css folder on save.
 
 - The app.js file will be linted and compressed on save. Check the terminal for errors. A warning sound will play if your js does not pass. 
 
