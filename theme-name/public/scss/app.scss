@@ -1,0 +1,19 @@
+// styles.scss
+
+body {
+	width: percentage(1/1);
+	background-color: #333 ;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+} 
+
+a {
+	color: green;
+
+	&:visited {
+		color: green;
+	}
+}

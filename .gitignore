@@ -1,0 +1,10 @@
+# os files
+*.DS_store
+*.zip
+*.pdf
+*.psd
+
+# node stuff
+node_modules
+
+
