@@ -1,19 +1,5 @@
-// styles.scss
+// very simple reset, no added styles :)
+@import 'reset';
 
-body {
-	width: percentage(1/1);
-	background-color: #333 ;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-} 
 
-a {
-	color: green;
-
-	&:visited {
-		color: green;
-	}
-}
+// what are you waiting for? 

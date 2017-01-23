@@ -1,5 +1,16 @@
 # Getting started
 
+I was tired of installing underscore_s and modifying it heck out of it, so this I created a quick boilerplate theme with things set up the way I like it. If you dig it, fork away and customize it to your heart's content. 
+
+***I am using gulp to do the following:***
+- Complile Sass
+- Minify & rename CSS
+- Lint JS files
+- Compress JS 
+
+The theme itself isn't doing anything fancy. It has all the files that I need and use regularly. 
+
+
 ## Install
 After installing WordPress, using terminal, navigate to your themes directory. 
 
@@ -29,7 +40,6 @@ const themeName = 'theme-name';
 ```
 
 Change `theme-name` out with the slug of your new theme folder. 
-
 
 
 ***functions.php***
