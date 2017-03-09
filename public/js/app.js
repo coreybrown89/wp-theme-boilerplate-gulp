@@ -1,1 +1,7 @@
-// what are you waiting for?
+(function($){
+	$(document).ready(function(){
+
+    // what are you waiting for?
+
+	});
+})(jQuery);
