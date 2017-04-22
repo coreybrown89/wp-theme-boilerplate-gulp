@@ -23,7 +23,7 @@ gulp.task('sass', function() {
 
 	console.log('compiling sass ...')
 
-	return gulp.src('/public/scss/**/*.scss')
+	return gulp.src('public/scss/**/*.scss')
 		.pipe(sass())
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions'],
@@ -31,7 +31,7 @@ gulp.task('sass', function() {
 		}))
 		//.pipe(cssmin())
 		.pipe(rename({ suffix: '.min' }))
-		.pipe(gulp.dest('/public/css'))
+		.pipe(gulp.dest('public/css'))
 });
 
 // lint app.js
@@ -39,7 +39,7 @@ gulp.task('jshint', function() {
 
 	console.log('linting javascript ...')
 
-	return gulp.src('/public/js/app.js')
+	return gulp.src('public/js/app.js')
 	.pipe(jshint())
 	.pipe(jshint.reporter(stylish, {beep: true}))
 		.pipe(jshint.reporter('fail'))
@@ -52,12 +52,12 @@ gulp.task('compress', function(cb) {
 	console.log('compressing javascript ...')
 
 	pump([
-			gulp.src('/public/js/app.js'),
+			gulp.src('public/js/app.js'),
 			// uglify(),
 			rename({ suffix: '.min' }),
-			gulp.dest('/public/js')
+			gulp.dest('public/js')
 		],
-		cb		
+		cb
 	);
 });
 
@@ -65,7 +65,7 @@ gulp.task('compress', function(cb) {
 // default gulp task
 gulp.task('default', function() {
 
-	gulp.watch('/public/scss/**/*.scss', ['sass']);
-	gulp.watch('/public/js/app.js', ['jshint','compress']);
+	gulp.watch('public/scss/**/*.scss', ['sass']);
+	gulp.watch('public/js/app.js', ['jshint','compress']);
 
 });
