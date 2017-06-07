@@ -1,18 +1,18 @@
 # Getting started
 
-I was tired of installing underscore_s and modifying it heck out of it, so I created a quick boilerplate theme with things set up the way I like it. If you dig it, fork away and customize it to your heart's content. 
+I was tired of installing underscore_s and modifying it heck out of it, so I created a quick boilerplate theme with things set up the way I like it. If you dig it, fork away and customize it to your heart's content.
 
 ***I am using gulp to do the following:***
-- Complile Sass
-- Minify & rename CSS
+- Compile Sass
+- Minify & Compress CSS
 - Lint JS files
-- Compress JS 
+- Compress JS
 
-The theme itself isn't doing anything fancy. It just has all the files that I need and use regularly. 
+The theme itself isn't doing anything fancy. It just has all the files that I need and use regularly.
 
 
 ## Install
-After installing WordPress, using terminal, navigate to your themes directory. 
+After installing WordPress, using terminal, navigate to your themes directory.
 
 Clone this git repo by using the following command:
 
@@ -20,35 +20,28 @@ Clone this git repo by using the following command:
 $ git clone https://github.com/coreybrown89/wp-theme-boilerplate-gulp.git
 ```
 
-This will download the latest version of wp-theme-boilerplate-gulp. 
+This will download the latest version of wp-theme-boilerplate-gulp.
 
-*You can also download this repo by clicking on the download link above the source files. Unzip this folder and add it to your themes directory in WordPress.* 
+*You can also download this repo by clicking on the download link above the source files. Unzip this folder and add it to your themes directory in WordPress.*
 
 In the terminal run:
 ```
 $ npm install
-``` 
+```
+or if you use yarn
+```
+$ yarn
+```
 
 ## Setup
 
-***gulpfile.js***
-
-Now that you are all set up, with dependencies installed, open up `gulpfile.js` and locate: 
-
-``` javascript
-const themeName = 'theme-name';
-```
-
-Change `theme-name` out with the slug of your new theme folder. 
-
-
 ***functions.php***
 
-Head over to `functions.php`. Once there, you will want to find and replace all instances of `custom_theme`.
+Now that you are all set up, with dependencies installed, open up `functions.php`. Once there, you will want to find and replace all instances of `custom_theme`.
 
 ***style.css***
 
-Next up, go to `style.css` in the root of the theme. In the comment at the top, reaname the `Theme Name`, `Author` and `Author URI` with your theme information. 
+Next up, go to `style.css` in the root of the theme. In the comments at the top, rename the `Theme Name`, `Author` and `Author URI` with your theme information.
 
 ***screenshot.png***
 
@@ -57,9 +50,9 @@ To add a custom screenshot to your theme, replace the file screenshot.png with a
 
 ## CSS, SASS, JS & Fonts
 
-All of the css, sass, js and fonts are located in the `/public` folder in the root of the theme.
+All of the css, sass, js and fonts are located in the `/public` folder in the root of the theme. Import all sass files to `app.scss`
 
-When editing your theme, use the `gulp` command to compile & minify sass and lint and uglify javascript.
+When editing your theme, use the `gulp` command to start watching your files. Each time you save a `js` file or `scss` file gulp will compile & minify sass and lint and uglify javascript.
 
 ```
 $ gulp
@@ -69,7 +62,7 @@ $ gulp
 
 - All .scss files inside of the `/scss` will be compiled and minified to css and added to the /css folder on save.
 
-- The app.js file will be linted and compressed on save. Check the terminal for errors. A warning sound will play if your js does not pass. 
+- The app.js file will be linted and compressed on save. Check the terminal for errors. A warning sound will play if your js does not pass.
 
 
 Have fun and happy coding!

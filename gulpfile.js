@@ -29,7 +29,7 @@ gulp.task('sass', function() {
 			browsers: ['last 2 versions'],
             cascade: false
 		}))
-		//.pipe(cssmin())
+		.pipe(cssmin())
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(gulp.dest('public/css'))
 });
@@ -53,7 +53,7 @@ gulp.task('compress', function(cb) {
 
 	pump([
 			gulp.src('public/js/app.js'),
-			// uglify(),
+			uglify(),
 			rename({ suffix: '.min' }),
 			gulp.dest('public/js')
 		],
