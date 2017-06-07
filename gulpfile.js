@@ -23,7 +23,7 @@ gulp.task('sass', function() {
 
 	console.log('compiling sass ...')
 
-	return gulp.src('public/scss/**/*.scss')
+	return gulp.src('public/scss/app.scss')
 		.pipe(sass())
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions'],
