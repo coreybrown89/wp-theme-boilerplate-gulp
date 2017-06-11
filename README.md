@@ -50,19 +50,32 @@ To add a custom screenshot to your theme, replace the file screenshot.png with a
 
 ## CSS, SASS, JS & Fonts
 
-All of the css, sass, js and fonts are located in the `/public` folder in the root of the theme. Import all sass files to `app.scss`
-
-When editing your theme, use the `gulp` command to start watching your files. Each time you save a `js` file or `scss` file gulp will compile & minify sass and lint and uglify javascript.
+All of the css, sass, js and fonts are located in the `/resources` folder in the root of the theme. Import all sass files to `app.scss`. All scss and js files will get compressed, compiled and gziped and added to the `/public` folder.
 
 ```
 $ gulp
 ```
+
+When editing your theme, use the `gulp` command to start watching your files. Each time you save a `js` file or `scss` file gulp will compile & minify sass and lint and uglify javascript.
+
+
+## Images
+
+Add any `jpg`, `png`, `svg` or `gif` file to `/resouces/images`. When you add a new file to `/images` you will need to tell gulp to process the images.
+
+```
+$ gulp images
+```
+
+This will optimize and compress all assets inside of `/resources/images`. They compressed images will be located at `/public/images`.
 
 ***When running gulp***
 
 - All .scss files inside of the `/scss` will be compiled and minified to css and added to the /css folder on save.
 
 - The app.js file will be linted and compressed on save. Check the terminal for errors. A warning sound will play if your js does not pass.
+
+- Image compression settins can be changed inside of `gulpfile.js`.
 
 
 Have fun and happy coding!

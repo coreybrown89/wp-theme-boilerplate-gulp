@@ -4,7 +4,7 @@ a{
 }
 
 body{
-    font-family: $sans-serif;
+    font-family: $system ;
     font-weight: 300;
 }
 
@@ -18,13 +18,13 @@ h1,h2,h3,h4,h5,figure{
 }
 
 p {
-  font-family: $averta-light;
+  font-family: $system;
   font-weight: normal;
   font-size: 18px;
 }
 
 strong {
-  font-family: $averta-bold;
+  font-family: $system;
   font-weight: normal;
 }
 
