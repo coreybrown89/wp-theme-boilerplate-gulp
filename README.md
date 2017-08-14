@@ -8,7 +8,7 @@ I was tired of installing underscore_s and modifying it heck out of it, so I cre
 - Lint JS files
 - Compress JS
 
-The theme itself isn't doing anything fancy. It just has all the files that I need and use regularly.
+The theme itself isn't doing anything fancy. No styles are added actually. It just has all the files that I need and use regularly.
 
 
 ## Install
@@ -28,7 +28,7 @@ In the terminal run:
 ```
 $ npm install
 ```
-or if you use yarn
+or if you're hip:
 ```
 $ yarn
 ```
@@ -61,13 +61,13 @@ When editing your theme, use the `gulp` command to start watching your files. Ea
 
 ## Images
 
-Add any `jpg`, `png`, `svg` or `gif` file to `/resouces/images`. When you add a new file to `/images` you will need to tell gulp to process the images.
+Add any `jpg`, `png`, `svg` or `gif` file to `/resouces/images`. When you add a new file to `/images` you will need to tell gulp to process the images by running the following:
 
 ```
 $ gulp images
 ```
 
-This will optimize and compress all assets inside of `/resources/images`. They compressed images will be located at `/public/images`.
+This will optimize and compress all assets inside of `/resources/images`. The compressed images will be located at `/public/images`. This does not watch your files. You will need to run this each time you are adding images.
 
 ***When running gulp***
 
