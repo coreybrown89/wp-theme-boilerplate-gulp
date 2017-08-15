@@ -1,5 +1,5 @@
 {
-	"name": "Wordpress Boilerplate with Gulp",
+	"name": "wordpress-boilerplate-gulp",
 	"version": "1.0.0",
 	"description": "A simple wordpress theme optimized for developers.",
 	"main": "index.js",
