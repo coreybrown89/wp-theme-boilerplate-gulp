@@ -4,9 +4,10 @@ I was tired of installing underscore_s and modifying it heck out of it, so I cre
 
 ***I am using gulp to do the following:***
 - Compile Sass
-- Minify & Compress CSS
+- Minify & gZip CSS
+- Transpile ES6
 - Lint JS files
-- Compress JS
+- Uglify & gZip JS
 
 The theme itself isn't doing anything fancy. No styles are added actually. It just has all the files that I need and use regularly.
 

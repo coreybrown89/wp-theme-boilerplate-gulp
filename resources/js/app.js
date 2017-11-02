@@ -1,7 +1,5 @@
-(function($){
-	$(document).ready(function(){
-
-    // what are you waiting for?
-
+($ => {
+	$(document).ready(() => {
+		// what are you waiting for?
 	});
 })(jQuery);
